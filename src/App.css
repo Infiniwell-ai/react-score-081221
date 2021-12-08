@@ -1,9 +1,12 @@
 .App {
   text-align: center;
 }
+.chart{
+  width:60%;
+}
 
-.App-logo {
-  height: 40vmin;
+.logo {
+  height: 7vmin;
   pointer-events: none;
 }
 
@@ -11,6 +14,51 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+.col-md-9
+{
+  
+    position: relative;
+    width:100;
+    padding-right: 50px;
+    padding-left: 15px;
+}
+.col-md-2
+{
+  position: relative;
+  padding-right: 15px;
+
+
+}
+#resp{
+  background-color:lightgrey;
+}
+#spo21{
+  background-color:lightgrey;
+}
+#spo22{
+  background-color:lightgrey;
+}
+#bp{
+  background-color:lightgrey;
+}
+#pulse{
+  background-color:lightgrey;
+}
+#temperature{
+  background-color:lightgrey;
+}
+#aooxy{
+  background-color:lightgrey;
+}
+#conscious{
+  background-color:lightgrey;
+}
+#scores{
+  background-color:lightcyan;
+}
+#info{
+  background-color:lightcyan;
 }
 
 .App-header {
@@ -22,6 +70,117 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+fieldset.scheduler-border {
+  border: 1px groove #ddd !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  -webkit-box-shadow:  0px 0px 0px 0px #000;
+          box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  text-align: left !important;
+  width:auto;
+  padding:0 10px;
+  border-bottom:none;
+}
+fieldset.scheduler-border-bottom{
+  border: 1px groove #ddd !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  -webkit-box-shadow:  0px 0px 0px 0px #000;
+          box-shadow:  10px 10px 10px 10px rgb(222, 222, 230);
+}
+
+legend.scheduler-border-bottom{
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  width: 100px;
+  padding:0 10px;
+  border-bottom:center;
+}
+
+
+fieldset.scheduler-border-top{
+  border: 3px groove #ddd !important;
+  padding: 0 2.0em 1.0em 1.0em !important;
+  margin: 0 0 1.5em 0 !important;
+  -webkit-box-shadow:  0px 0px 0px 0px #000;
+          box-shadow:  10px 10px 10px 10px rgb(222, 222, 230);
+}
+
+legend.scheduler-border-top{
+  font-size: 1.2em !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  width: 100px;
+  padding:0 5px;
+  border-bottom:center;
+}
+
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+#two{
+  margin-left:100px;
+  padding:6px;
+  width: 100%;
+  margin-top:0px;
+  margin-bottom:10px;
+  
+}
+#th{
+  background-color: lightgrey;
+  width:100px;
+  height:50%;
+}
+
+#three {
+ background-color: lightgrey;
+  width: 50%;
+  border: 1px solid blue;
+  padding: 20%;
+  margin-top:1px;
+  margin-bottom:10px;
+  margin-right: 25px;
+ 
+}
+#four {
+  background-color: white;
+  width: 89%;
+  height: 50%;
+  margin-left:10%;
+  border: 1px solid white;
+  padding: 0px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#button1{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
+#button2{
+  border: none;
+  color: white;
+  padding: 5px 50px;
+  text-align: right;
+  text-decoration:transparent;
+  display: inline-block;
+  font-size: 16px;
+  
 }
 
 .App-link {
@@ -36,3 +195,4 @@
     transform: rotate(360deg);
   }
 }
+

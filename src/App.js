@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
-
+import React from 'react'; 
+import Caluculator from './components/caluculator'; 
+import {useState, useEffect} from 'react';
+import axios from 'axios'
+  const getIPAddress = async () =>{
+  const { data : {IPv4},data:{} } = await axios.get('https://geolocation-db.com/json/');
+  axios.post('http://localhost:8000/api/logs/data-logs', { "ip_address" : IPv4})
+         .then(response => console.log(response));
+  
+  console.log(IPv4,"ipaddress");
+ };
 function App() {
+  
+  
+   useEffect( () => {
+    //passing getData method to the lifecycle method
+    getIPAddress()
+
+   }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Caluculator />
     </div>
+    
   );
 }
-
 export default App;
+
+
+
+
+
+
+
+
+
+
