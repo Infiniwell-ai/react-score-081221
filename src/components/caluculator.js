@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef} from "react";
 import axios from "axios";
-import companyLogo from "D:/news-score/src/images/Infiniwell-Logo.jpg";
+import companyLogo from '../image/Infiniwell-Logo.jpg';
+
 
 const respirationCaluculator = (data) => {
   if (data) {
